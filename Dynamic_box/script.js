@@ -1,6 +1,21 @@
 const options = document.querySelectorAll(".option");
 const totalElement = document.getElementById("total");
 
+const container = document.querySelector(".container");
+
+container.addEventListener("mouseleave", () => {
+  options.forEach((o) => {
+    const selectors = o.querySelector(".selectors");
+    o.classList.remove("selected");
+    o.querySelector("input").checked = false;
+    if (selectors) selectors.innerHTML = "";
+  });
+
+  // Reset total
+  totalElement.textContent = "0.00";
+});
+
+
 function selectOption(option) {
   options.forEach((o) => {
     const selectors = o.querySelector(".selectors");
