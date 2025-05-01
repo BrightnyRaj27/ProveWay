@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bundle & Save</h2>
+
+      <div class="option" data-pairs="1" data-price="195">
+        <label class="option-label">
+          <input type="radio" name="pair" value="1" />
+          <div class="radio-info">
+            <strong>1 Pair</strong>
+            <span class="price">DKK 195.00</span>
+          </div>
+          <span class="discount">50% OFF</span>
+        </label>
+        <div class="selectors"></div>
+      </div>
+
+      <div class="option most-popular" data-pairs="2" data-price="345">
+        <label>
+          <input type="radio" name="pair" value="2" />
+          <div class="info">
+            <strong>2 Pair</strong>
+            <span class="price">DKK 345.00 <small>DKK 195.00</small></span>
+          </div>
+          <span class="badge">Most Popular</span>
+          <span class="discount">40% OFF</span>
+        </label>
+        <div class="selectors"></div>
+      </div>
+
+      <div class="option" data-pairs="3" data-price="528">
+        <label>
+          <input type="radio" name="pair" value="3" />
+          <div class="info">
+            <strong>3 Pair</strong>
+            <span class="price">DKK 528.00</span>
+          </div>
+          <span class="discount">60% OFF</span>
+        </label>
+        <div class="selectors"></div>
+      </div>
+
+      <div class="summary-row">
+        <p class="shipping">Free 2 Day Shipping</p>
+        <p class="total">Total: DKK <span id="total">0.00</span></p>
+      </div>
+
+      <div class="footer">
+        <span class="powered-by">© Powered by Pumper</span>
+        <button class="btn">+ Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
